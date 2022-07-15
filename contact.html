@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button><a href="index.html">home</a></button>
+        <button><a href="mijncv.html">mijn cv</a></button>
+        <button><a href="contact.html">contact</a></button>
+      </nav>
+    </header>
+    <div class="contact">
+      <form
+        id="formulier"
+        action="https://formspree.io/f/xlezkeez"
+        method="post"
+      >
+        <fieldset>
+          <legend><b>Schrijf uw bericht</b></legend>
+          <table style="width: 20%">
+            <tr>
+              <td><label for="voornaam">Voornaam</label></td>
+              <td>
+                <input type="text" id="voornaam" placeholder="Voornaam" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="achternaam">Achternaam</label></td>
+              <td><input type="text" id="achternaam" name="achternaam" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">E-mail adres</label></td>
+              <td><input type="email" id="email" name="emailadres" /></td>
+            </tr>
+            <tr>
+              <td><label for="bericht">Bericht:</label></td>
+              <td>
+                <textarea
+                  name="bericht"
+                  rows="5"
+                  cols="21"
+                  maxlength="500"
+                  placeholder="Gebruik maximaal 500 tekens"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <button type="submit" form="formulier" value="Submit">
+          <a>Verstuur</a>
+        </button>
+      </form>
+    </div>
+    <footer>
+      <p>&#169; <em>- Sjoerd</em></p>
+    </footer>
+  </body>
+</html>
